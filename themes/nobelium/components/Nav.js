@@ -43,17 +43,7 @@ const Nav = props => {
             ref={navRef}
         >
             <div className="flex items-center">
-                <Link href="/" aria-label={siteConfig('TITLE')}>
 
-                    <div className="h-6 w-6">
-                        {/* <SvgIcon/> */}
-                        {siteConfig('NOBELIUM_NAV_NOTION_ICON', null, CONFIG)
-                          ? <LazyImage src={siteInfo?.icon} width={24} height={24} alt={siteConfig('AUTHOR')} />
-                          : <SvgIcon />}
-
-                    </div>
-
-                </Link>
                 {navBarTitle
                   ? (
                         <p className="ml-2 font-medium text-gray-800 dark:text-gray-300 header-name">
